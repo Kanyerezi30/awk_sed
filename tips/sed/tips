@@ -1,0 +1,11 @@
+You can apply multiple commands to the same range of lines by enclosing the editing commands within braces as shown below
+
+/^\.TS/,/^\.TE/{
+	/^$/d
+	s/^\.ps 10/.ps 8/
+	s/^\.vs 12/.vs 10/
+}
+
+Note: The opening curly braces must end a line and the closing curly brace must be on a line by itself. Be sure there are no spaces after the braces
+
+This example only deletes blank lines in tbl input but it also uses the substitute command, s, to change several troff requests. These commands are applied only to lines within the .TS/.TE block
