@@ -10,4 +10,4 @@ Note: The opening curly braces must end a line and the closing curly brace must 
 
 This example only deletes blank lines in tbl input but it also uses the substitute command, s, to change several troff requests. These commands are applied only to lines within the .TS/.TE block
 
-The delete command is also a command that can change the flow of control in a script. That is because once it is executed, no further commands are executed on the "empty" pattern space
+The delete command is also a command that can change the flow of control in a script. That is because once it is executed, no further commands are executed on the "empty" pattern space. The delete command causes a new line of input to be read and a new pass on the editing script to begin from the top. In this behaviour, it is the same as the next command.
