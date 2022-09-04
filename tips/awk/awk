@@ -18,3 +18,7 @@ index()
 substr()
 sub()
 gsub()
+
+function name (parameter-list){
+	statements
+}
