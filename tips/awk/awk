@@ -12,3 +12,9 @@ increment_counter: increments the counter each time at the bottom of the loop, r
 Below is an example that prints each field on the input line
 	for (i = 1; i <= NF; i++)
 		print $i
+
+
+index()
+substr()
+sub()
+gsub()
