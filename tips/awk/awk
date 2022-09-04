@@ -1,1 +1,2 @@
+expr ? action1 : action2
 grade = (avg >= 65) ? "Pass" : "Fail"
