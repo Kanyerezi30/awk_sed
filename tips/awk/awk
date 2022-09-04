@@ -1,2 +1,14 @@
 expr ? action1 : action2
 grade = (avg >= 65) ? "Pass" : "Fail"
+
+
+for (set_counter; test_counter; increment_counter)
+	action
+
+set_counter: sets the initial value for a counter variable
+test_counter: states a condition that is tested at the top of the loop
+increment_counter: increments the counter each time at the bottom of the loop, right before testing the test_counter again
+
+Below is an example that prints each field on the input line
+	for (i = 1; i <= NF; i++)
+		print $i
